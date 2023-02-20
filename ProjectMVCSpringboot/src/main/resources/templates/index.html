@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{template.html}">
+<head>
+<title layout:fragment="title">Strona główna</title>
+</head>
+
+<body>
+<div layout:fragment="custom-header" style="background-color: rgba(255,255,255, 0.59) ;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <br>
+    <h1>Przepisy.pl</h1>
+    <br>
+</div>
+<div layout:fragment="custom-menu">
+    <div th:replace="~{fragments :: menu(param1='home')}"></div>
+    <hr>
+</div>
+<div layout:fragment="custom-content" style="margin:auto; text-align: center;">
+    <br>
+    <div th:replace="~{fragments :: indexFragment}">
+    </div>
+
+
+    <div th:replace="~{fragments :: mostCommentedList}">
+    </div>
+
+    <a style = "margin: auto" class="btn btn-primary" th:href="@{/recipe-list}">Lista przepisow</a>
+    <br><br><br>
+
+</div>
+<div layout:fragment="custom-footer" th:replace="~{fragments :: footer}">
+
+</div>
+</body>
+</html>

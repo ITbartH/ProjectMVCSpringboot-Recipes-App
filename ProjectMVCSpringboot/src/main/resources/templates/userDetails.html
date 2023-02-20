@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div th:replace="~{fragments :: header-css}"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+        function myFunction() {
+            const editBtn = document.getElementById("editUser");
+            const firstInput = document.getElementById("firstname_input");
+            const lastInput = document.getElementById("lastname_input")
+            const emailInput = document.getElementById("email_input")
+            const postUser = document.getElementById("postEditUser")
+            const fileInput = document.getElementById("file_input")
+
+            if(firstInput.type == 'hidden'){
+                firstInput.type = 'text';
+                lastInput.type = 'text';
+                emailInput.type = 'text';
+                postUser.style.display = 'block';
+                fileInput.style.display = 'block';
+                editBtn.innerText = "Anuluj";
+            } else {
+                firstInput.type = 'hidden';
+                lastInput.type = 'hidden';
+                emailInput.type = 'hidden';
+                postUser.style.display = 'none';
+                fileInput.style.display = 'none';
+                editBtn.innerText = "Edytuj";
+            }
+        }
+    </script>
+</head>
+<body>
+<br>
+<h1>Panel użytkownika</h1>
+<br>
+<div th:replace="~{fragments :: menu(param1='user')}"></div>
+<hr>
+<div th:replace="~{fragments :: userDetails}"></div>
+<br><br>
+</body>
+</html>

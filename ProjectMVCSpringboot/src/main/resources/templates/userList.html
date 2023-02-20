@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div th:replace="~{fragments :: header-css}"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function myFunction() {
+            const tableUser = document.getElementById("tableUser");
+            const userListBtn = document.getElementById("userListBtn");
+            const divUserList = document.getElementById("divUserList");
+
+            if(tableUser.style.display == 'none'){
+                tableUser.style.display = '';
+                userListBtn.innerText = "Schowaj listę"
+                divUserList.style.height = '';
+
+            } else {
+                tableUser.style.display = 'none';
+                userListBtn.innerText = "Pokaż listę"
+                divUserList.style.height = '250px';
+            }
+        }
+        function myFunction2() {
+
+            const tableIng = document.getElementById("tableIng");
+            const ingredientBtn = document.getElementById("ingredientBtn");
+
+
+            if(tableIng.style.display == 'none'){
+                tableIng.style.display = '';
+                ingredientBtn.innerText = "Schowaj listę"
+            } else {
+                tableIng.style.display = 'none';
+                ingredientBtn.innerText = "Pokaż listę"
+            }
+        }
+        function myFunction3() {
+            const tableCat = document.getElementById("tableCat");
+            const categoryBtn = document.getElementById("categoryBtn");
+            if(tableCat.style.display == 'none'){
+                tableCat.style.display = '';
+                categoryBtn.innerText = "Schowaj listę";
+            } else {
+                tableCat.style.display = 'none';
+                categoryBtn.innerText = "Pokaż listę";
+            }
+        }
+    </script>
+</head>
+<body>
+<br>
+<h1>Panel administratora</h1>
+<br>
+<div th:replace="~{fragments :: menu(param1='user')}"></div>
+<hr>
+<div th:replace="~{fragments :: userList}"></div>
+<br><br>
+</body>
+</html>

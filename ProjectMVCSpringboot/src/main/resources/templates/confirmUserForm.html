@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <div th:replace="~{fragments :: header-css}"/>
+    <title>Wyslane dane</title>
+</head>
+<body>
+<br>
+<h1>Witamy w gronie użytkowników</h1>
+<br>
+<div th:replace="~{fragments :: menu(param1='user')}"></div>
+<div th:replace="~{fragments :: usersuccess}"></div>
+<footer th:replace="~{fragments :: footer}"></footer>
+</body>
+</html>

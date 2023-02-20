@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div th:replace="~{fragments :: header-css}"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br>
+<h1>Twoje książki kucharskie</h1>
+<br>
+<div th:replace="~{fragments :: menu(param1='user')}"></div>
+<hr>
+<div th:replace="~{fragments :: recipeBook}"></div>
+<br><br>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <title>Please Log In</title>
+    <div th:replace="~{fragments :: header-css}"/>
+</head>
+<body>
+
+
+<br>
+<h1>Zaloguj się</h1>
+<br>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item" >
+            <a class="nav-link" th:href="@{/}">Home<span class="sr-only"></span></a>
+        </li>
+    </ul>
+</nav>
+<hr>
+<div th:if="${param.error}" style="text-align: center; ">
+    Invalid username and password.
+</div>
+<div th:if="${param.logout}" style="text-align: center; ">
+    You have been logged out.
+</div>
+<div  id="loginForm" style="background-color: #efefef; width: 20%; margin-right: auto; margin-left: auto; margin-top:5%; border: 2px solid #dcdcdc; border-radius: 15px; padding:15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <form th:action="@{/login}" method="post">
+        <hr>
+        <div>
+            <input class="form-control" type="text" name="username" placeholder="Nazwa użytkownika"/>
+        </div>
+        <br>
+        <div>
+            <input class="form-control" type="password" name="password" placeholder="Hasło"/>
+        </div>
+        <hr>
+        <br>
+        <button type="submit" class="btn btn-dark" style="margin: auto; text-align: center;">Zaloguj</button>
+    </form>
+    <br>
+    <hr>
+    <p style="text-align: center; margin: auto;">Nie masz konta? <a th:href="@{/user-form}">Założ je tutaj... </a></p>
+</div>
+
+</body>
+</html>

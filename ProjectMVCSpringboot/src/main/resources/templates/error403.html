@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <div th:replace="~{fragments :: header-css}"/>
+    <meta charset="UTF-8">
+    <title>Błąd 403</title>
+</head>
+<body>
+    <div>
+        <br>
+        <h1>403 - Odmowa dostępu</h1>
+        <br>
+        <div th:replace="~{fragments :: menu(param1='')}"></div>
+        <hr><br>
+        <div>
+            <div style="margin: auto; width: 60%; text-align: center; padding: 3em; background-color: rgba(255,255,255, 0.79) ;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><h1>Witaj <span sec:authentication="principal.username"/>!</h1>
+                Przykro nam, ale nie masz odpowiednich uprawnień do żądanej strony.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <div th:replace="~{fragments :: header-css}"/>
+    <title>Lista przepisów</title>
+</head>
+<body>
+<br>
+<h1>Lista przepisów</h1>
+<br>
+<div th:replace="~{fragments :: menu(param1='list')}"></div>
+<hr>
+<div id="content">
+    <div th:replace="~{fragments :: recipelist}"></div>
+
+
+</div>
+
+<footer th:replace="~{fragments :: footer}"></footer>
+
+</body>
+</html>

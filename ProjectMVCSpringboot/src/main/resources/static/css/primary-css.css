@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@200;600&family=Lato&display=swap');
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("background4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-right: 0px;
+}
+
+h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 42px;
+}
+h2{
+    font-family: 'Lato', sans-serif;
+}
+h3{
+    font-family: 'Lato', sans-serif;
+}
+h4{
+    font-family: 'Lato', sans-serif;
+}
+h5{
+    font-family: 'Lato', sans-serif;
+}
+p{
+    font-family: 'Lato', sans-serif;
+}
+
+button{
+    border-radius: 15px;
+}
+.input-form{
+    margin-bottom: 5px;
+}
+
+#content{
+    margin: auto;
+    text-align: center;
+    font-family: Arial;
+}
+#detailsDiv{
+
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5vh;
+    align-items: center;
+
+}
+
+#detailsDiv2{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vh;
+    align-items: center;
+
+}
+#loginForm{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    height: 30%;
+    width: 25%;
+    text-align: center;
+}
+#userSucc{
+    text-align: center;
+    font-size: 28px;
+    margin: auto;
+}
+.contentBackground{
+    background-color: #efefef;
+    margin: auto;
+    border: 2px solid #dcdcdc;
+    border-radius: 15px;
+    padding:15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#table_recipes{
+    margin: auto;
+}
+
+.CardsList{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 10vh;
+}
+
+.CardsList{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 10vh;
+}
+
+.BooksList{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    width: 80%;
+    gap: 10vh;
+}
+
+.comment{
+    width: 90%;
+    text-align: center;
+    border: 2px solid #dcdcdc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding:10px;
+}
+
+
+
