@@ -1,3 +1,5 @@
+[PL]
+
 # ProjectMVC-SpringBoot-Recipes-App
 
 Aplikacja webowa do zarządzania przepisami kulinarnymi, stworzona w architekturze MVC z wykorzystaniem Spring Boot. Umożliwia przeglądanie, dodawanie, edytowanie i usuwanie przepisów, a także komentowanie oraz dodawanie przepisów do własnej książki kucharskiej.
@@ -105,3 +107,107 @@ Zachęcam do zgłaszania błędów, sugestii oraz propozycji nowych funkcji popr
 ---
 
 Autor: [ITbartH](https://github.com/ITbartH)
+
+[ENG]
+
+# ProjectMVC-SpringBoot-Recipes-App
+
+A web application for managing cooking recipes, built using the MVC architecture with Spring Boot. It allows users to browse, add, edit, and delete recipes, as well as comment on and save them to their personal cookbook.
+
+---
+
+## Technologies
+
+- Spring Boot – main framework of the application
+- Spring MVC – Model-View-Controller architecture
+- Spring Security – user authentication and authorization
+- Spring Data JPA – database integration
+- Thymeleaf – HTML templating engine
+- Hibernate – ORM for entity mapping
+- H2 – embedded database (for testing)
+- Bootstrap – user interface styling
+
+---
+
+## Features
+
+- User registration and login
+- Adding, editing, and deleting recipes
+- Commenting on recipes
+- Creating a personal cookbook
+- Filtering recipes by name, ingredients, preparation time, etc.
+- Access control using Spring Security
+
+---
+
+## Running the Application Locally
+
+### Requirements
+
+- Java 17+
+- Maven 3.8+
+
+### Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ITbartH/ProjectMVCSpringboot-Recipes-App.git
+   cd ProjectMVCSpringboot-Recipes-App
+   ```
+
+2. Run the application:
+   ```bash
+   mvn spring-boot:run
+   ```
+
+3. Open your browser and go to: [http://localhost:8080](http://localhost:8080)
+
+---
+
+## Test Data
+
+The application includes sample test data that is loaded on startup. You can modify it in the `data.sql` file or use the web interface.
+
+---
+
+## Project Structure
+
+```
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── example
+│   │   │           └── recipesapp
+│   │   │               ├── controller
+│   │   │               ├── model
+│   │   │               ├── repository
+│   │   │               ├── service
+│   │   │               └── security
+│   └── resources
+│       ├── templates
+│       └── static
+└── pom.xml
+```
+
+---
+
+## Authentication
+
+The application uses Spring Security to manage users. New users can register and log in to access features like adding recipes and posting comments.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contribution
+
+Feel free to submit issues, suggestions, or feature requests via the [Issues](https://github.com/ITbartH/ProjectMVCSpringboot-Recipes-App/issues) tab.
+
+---
+
+Author: [ITbartH](https://github.com/ITbartH)
