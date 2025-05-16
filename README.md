@@ -86,11 +86,6 @@ Aplikacja zawiera przykładowe dane testowe ładowane przy starcie. Możesz je d
 
 Aplikacja wykorzystuje Spring Security do zarządzania użytkownikami. Nowi użytkownicy mogą się rejestrować, a następnie logować, aby uzyskać dostęp do funkcji takich jak dodawanie przepisów czy komentarzy.
 
----
-
-## Demo
-
-Aplikacja została wdrożona na Vercel i jest dostępna pod adresem: [project-mvc-springboot-recipes-app.vercel.app](https://project-mvc-springboot-recipes-app.vercel.app)
 
 ---
 
