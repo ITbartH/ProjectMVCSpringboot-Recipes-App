@@ -1,4 +1,4 @@
-[PL]
+*[PL]*
 
 # ProjectMVC-SpringBoot-Recipes-App
 
@@ -103,7 +103,11 @@ Zachęcam do zgłaszania błędów, sugestii oraz propozycji nowych funkcji popr
 
 Autor: [ITbartH](https://github.com/ITbartH)
 
-[ENG]
+
+
+
+
+*[ENG]*
 
 # ProjectMVC-SpringBoot-Recipes-App
 
